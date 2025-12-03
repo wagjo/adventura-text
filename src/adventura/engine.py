@@ -93,6 +93,6 @@ class Engine:
 
     @classmethod
     def load_game(cls, json_path):
-        with open(json_path) as json_file:
+        with open(json_path, encoding='utf-8') as json_file:
             data = json.load(json_file)
             return Engine.from_dict(data)
