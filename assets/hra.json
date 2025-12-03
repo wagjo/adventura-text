@@ -1,0 +1,233 @@
+{
+  "intro": "Vitaj milý dobrodruh! Podarí sa ti nájsť poklad, alebo Ťa na tejto ceste postihne nešťastie?",
+  "outro": "Dúfame, že sa Ti hra páčila, budeme radi, ak si ju zahráš aj nabudúce. Dovidenia!",
+  "player": {
+    "start_room_id": "1"
+  },
+  "rooms": [
+    {
+      "room_id": "1",
+      "image": "room1.jpeg",
+      "label": "Čistinka",
+      "desc": "Stojíš na kraji čistinky, cez ktorú preteká zurčivý potôčik. Slniečko svieti a vo vzduchu cítiť rannú vôňu trávy. Na západ vedie cesta do lesa. Cez potôčik ide rozpadnutá drevená lávka, treba ju opraviť.",
+      "uses": [
+        {
+          "item_id": "doska",
+          "desc": "Pomocou dosky si opravil lávku, teraz je ako nová!",
+          "replace": {
+            "desc": "Stojíš na kraji čistinky, cez ktorú preteká zurčivý potôčik. Slniečko svieti a vo vzduchu cítiť rannú vôňu trávy. Na západ vedie cesta do lesa. Cez potôčik ide drevená lávka a po nej pokračuje chodník na východ.",
+            "image": "room1b.png",
+            "exits": [
+              {
+                "label": "zapad",
+                "room_id": "2"
+              },
+              {
+                "label": "vychod",
+                "room_id": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "exits": [
+        {
+          "label": "zapad",
+          "room_id": "2"
+        }
+      ]
+    },
+    {
+      "room_id": "2",
+      "image": "room2.jpeg",
+      "label": "Les",
+      "desc": "Ocitol si sa v lese. Pomedzi stromy sa sem tam prederie slnečný lúč. Občas začuješ húkanie sovy. Tvoju pozornosť upútal mohutný dub, okolo ktorého je udupané listie. Po lesnej ceste, na ktorej stojíš, už dávno nikto neišiel, a ďalej na západ je husto zarastená kríkmi. Bez mačety sa ďalej nedostaneš.",
+      "uses": [
+        {
+          "item_id": "maceta",
+          "desc": "Mačetou si sa presekal kríkmi a uvoľnil tak cestu na západ. Akoby tu odrazu bolo viac svetla.",
+          "replace": {
+            "desc": "Ocitol si sa v lese. Pomedzi stromy sa sem tam prederie slnečný lúč. Občas začuješ húkanie sovy. Tvoju pozornosť upútal mohutný dub, okolo ktorého je udupané listie. Po lesnej ceste, ktorú si vyčistil mačecou, sa vieš dostať ďalej na západ.",
+            "image": "room2b.png",
+            "exits": [
+              {
+                "label": "zapad",
+                "room_id": "11"
+              },
+              {
+                "label": "vychod",
+                "room_id": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "label": "doska",
+          "desc": "Drevená doska, dosť silná na to, aby sa na ňu mohol niekto postaviť"
+        }
+      ],
+      "exits": [
+        {
+          "label": "vychod",
+          "room_id": "1"
+        }
+      ]
+    },
+    {
+      "room_id": "3",
+      "image": "room3.jpeg",
+      "label": "Kopec",
+      "desc": "Vyšiel si na malý kopec. Je tu starý posed, ktorý tu postavili poľovníci. Cesta, po ktorej kráčaš sa na západ uberá ku lesu a na východ sa vinie k malej dedinke. Na sever sú v kopci skaly a v nich vidíš tmavý otvor. Vedú k nemu čerstvé stopy nejakého zvieraťa.",
+      "exits": [
+        {
+          "label": "zapad",
+          "room_id": "1"
+        },
+        {
+          "label": "vychod",
+          "room_id": "5"
+        },
+        {
+          "label": "sever",
+          "room_id": "4"
+        }
+      ]
+    },
+    {
+      "room_id": "4",
+      "label": "Jaskyňa",
+      "image": "room4.jpeg",
+      "desc": "Vošiel si do tmavej jaskyne. Na zemi si zazrel staré kosti. Vo vzdialenom kúte vidíš v pološere nejakú čudnú hnedú kopu. Jaskyňa pokračuje hlbšie do kopca, ale bez svetla sa ďalej nedostaneš.",
+      "exits": [
+        {
+          "label": "juh",
+          "room_id": "3"
+        }
+      ]
+    },
+    {
+      "room_id": "5",
+      "label": "Kraj dediny",
+      "image": "room5.jpeg",
+      "desc": "Si na okraji malej dediny. Stojí tu krčma z ktorej sa ozývajú hlasy a hudba. Pred krčmou stojí priviazaný a osedlaný kôň. Cesta z dediny na západ stúpa na neďaleký kopec a na východ pokračuje smerom na námestie.",
+      "exits": [
+        {
+          "label": "zapad",
+          "room_id": "3"
+        },
+        {
+          "label": "vychod",
+          "room_id": "7"
+        },
+        {
+          "label": "dnu",
+          "room_id": "6"
+        }
+      ]
+    },
+    {
+      "room_id": "6",
+      "label": "Krčma",
+      "image": "room6.jpeg",
+      "desc": "Vošiel si do krčmy. Je v nej niekoľko ľudí, dedinčanov a aj pocestných. V kozube horí oheň a na ňom sa varí polievka. Hostinský stojí za pultom a obsluhuje. Za stolom v zadnej časti vidíš sedieť čudnú postavu. Máš pocit, že si ju už niekde videl.",
+      "exits": [
+        {
+          "label": "von",
+          "room_id": "5"
+        }
+      ]
+    },
+    {
+      "room_id": "7",
+      "image": "room7.jpeg",
+      "label": "Námestie",
+      "desc": "Dedinské námestie zíva prázdnotou. Ľudia sú vo svojich domoch a dospávajú včerajšiu oslavu spojenú s jarmokom. Na námestí je tu po nej veľký neporiadok. Cesta z námestia vedie na západ. Na južnom konci námestia je kováčska dielňa. Na východnej strane je kostol. Vyzerá zatvorený, dvere na vežu sú však pootvorené.",
+      "exits": [
+        {
+          "label": "zapad",
+          "room_id": "5"
+        },
+        {
+          "label": "juh",
+          "room_id": "8"
+        },
+        {
+          "label": "vychod",
+          "room_id": "9"
+        }
+      ]
+    },
+    {
+      "room_id": "8",
+      "image": "room8.jpeg",
+      "label": "Kováčska dielňa",
+      "desc": "Kováčska dielňa je prázdna a oheň vyhasol. Kováč asi ešte spí. V kúte na polici vidíš rôzne náradie, možno by sa ti niečo z nich zišlo. V hromade uhlia sa niečo ligoce.",
+      "items": [
+        {
+          "label": "kluc",
+          "desc": "Zdobený kostolný kľúč, niekto ho musel stratiť"
+        }
+      ],
+      "exits": [
+        {
+          "label": "von",
+          "room_id": "7"
+        }
+      ]
+    },
+    {
+      "room_id": "9",
+      "image": "room9.jpeg",
+      "label": "Vo veži",
+      "desc": "Vošiel si do prízemia veže kostola, prievan však za tebou zabuchol dvere a bez kľúča ich nedokážeš otvoriť. Vyzerá, že jediná cesta vedie po strmých schodoch hore na vežu.",
+      "uses": [
+        {
+          "item_id": "kluc",
+          "desc": "Kľúčom si odomkol dvere von z veže.",
+          "replace": {
+            "desc": "Vošiel si do prízemia veže kostola, dvere von sú odomknuté. Okrem toho tu sú strmé schody hore na vežu, vyzerajú nebezpečne.",
+            "image": "room9b.png",
+            "exits": [
+              {
+                "label": "hore",
+                "room_id": "10"
+              },
+              {
+                "label": "von",
+                "room_id": "7"
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "label": "maceta",
+          "desc": "Stará mačeta, je však ešte celkom ostrá"
+        }
+      ],
+      "exits": [
+        {
+          "label": "hore",
+          "room_id": "10"
+        }
+      ]
+    },
+    {
+      "room_id": "10",
+      "image": "room10.jpeg",
+      "label": "Strmé schody",
+      "desc": "Stúpaš po strmých schodoch hore na vežu. Skôr než sa dostaneš hore sa ti však pošmykne noha a Ty padáš z veľkej výšky dolu. Tvoje bezvládne telo nájde kostolník na druhý deň.",
+      "game_over": "Tvoje dobrodružstvo sa skončilo skôr, než sa stihlo poriadne začať."
+    },
+    {
+      "room_id": "11",
+      "image": "room11.jpeg",
+      "label": "Opustený dom",
+      "desc": "Cestou hustým lesom si sa dostal k opustenému domu. Vošiel si dnu a hneď ti bolo jasné, že v ňom kedysi bývali zbojníci. Dom si dôsledne prehľadal a okrem zbraní si tam našiel aj poklad, ktorý si tu zbojníci nechali.",
+      "game_over": "Blahoželáme k nájdeniu pokladu, vyhral si!"
+    }
+  ]
+}

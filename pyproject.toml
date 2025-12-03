@@ -1,0 +1,5 @@
+[project]
+name = "adventura"
+version = "0.0.1"
+dependencies = [
+]
