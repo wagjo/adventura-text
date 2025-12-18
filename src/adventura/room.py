@@ -1,5 +1,5 @@
 class Room:
-    def __init__(self, room_id, label, desc, items=None, uses=None, exits=None, game_over=None):
+    def __init__(self, room_id, label, desc, items=None, uses=None, exits=None, game_over=None, image=None):
         if exits is None:
             exits = []
         if uses is None:
@@ -9,6 +9,7 @@ class Room:
         self._room_id = room_id
         self._label = label
         self._desc = desc
+        self._image = image
         self._exits = {exit["label"]: exit for exit in exits}
         self._uses = {use["item_id"]: use for use in uses}
         self._items = {item["label"]: item for item in items}
